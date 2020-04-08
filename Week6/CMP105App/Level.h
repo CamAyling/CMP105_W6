@@ -4,7 +4,7 @@
 #include "Framework/Input.h"
 #include <string.h>
 #include <iostream>
-
+#include "gravBall.h"
 
 class Level{
 public:
@@ -25,4 +25,6 @@ private:
 	Input* input;
 
 	// More level variables
+	gravBall gBall;
+	sf::Texture ballSprite;
 };
