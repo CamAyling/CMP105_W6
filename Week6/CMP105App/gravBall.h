@@ -8,11 +8,15 @@ public:
 	gravBall();
 	~gravBall();
 
+	void handleInput();
 	void update(float dt) override;
 	void setWindow(sf::RenderWindow* hwnd);
 
 protected:
 	sf::RenderWindow* window;
 	sf::Vector2f momentum;
+
+	bool clicking;
+	bool spacePrev;
 };
 

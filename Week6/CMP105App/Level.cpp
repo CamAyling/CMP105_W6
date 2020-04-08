@@ -12,6 +12,7 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	gBall.setTexture(&ballSprite);
 	gBall.setSize(sf::Vector2f(50, 50));
 	gBall.setPosition(300, 50);
+	gBall.setInput(input);
 }
 
 Level::~Level()
@@ -21,7 +22,7 @@ Level::~Level()
 // handle user input
 void Level::handleInput(float dt)
 {
-
+	gBall.handleInput();
 }
 
 // Update game objects

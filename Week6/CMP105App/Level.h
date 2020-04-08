@@ -6,7 +6,7 @@
 #include <iostream>
 #include "gravBall.h"
 
-class Level{
+class Level {
 public:
 	Level(sf::RenderWindow* hwnd, Input* in);
 	~Level();
