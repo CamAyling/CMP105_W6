@@ -5,12 +5,12 @@
 class gravBall : public GameObject
 {
 public:
-	gravBall();
+	gravBall() = default;
+	gravBall(sf::RenderWindow* hwnd);
 	~gravBall();
 
 	void handleInput();
 	void update(float dt) override;
-	void setWindow(sf::RenderWindow* hwnd);
 
 protected:
 	sf::RenderWindow* window;

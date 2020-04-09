@@ -6,7 +6,7 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	input = in;
 
 	// initialise game objects
-	gBall.setWindow(hwnd);
+	gBall = gravBall(window);
 
 	ballSprite.loadFromFile("gfx/Beach_Ball.png");
 	gBall.setTexture(&ballSprite);

@@ -1,8 +1,8 @@
 #include "gravBall.h"
 
-gravBall::gravBall()
+gravBall::gravBall(sf::RenderWindow* hwnd)
 {
-	window = NULL;
+	window = hwnd;
 	momentum = sf::Vector2f(0, 0);
 	clicking = false;
 	spacePrev = false;
@@ -10,11 +10,6 @@ gravBall::gravBall()
 
 gravBall::~gravBall()
 {
-}
-
-void gravBall::setWindow(sf::RenderWindow* hwnd)
-{
-	window = hwnd;
 }
 
 void gravBall::handleInput()
