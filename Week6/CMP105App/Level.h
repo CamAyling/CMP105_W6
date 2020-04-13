@@ -7,6 +7,7 @@
 #include "gravBall.h"
 #include "pathBall.h"
 #include "mouseBall.h"
+#include "angryBird.h"
 
 class Level {
 public:
@@ -30,5 +31,8 @@ private:
 	gravBall gBall;
 	pathBall pBall;
 	mouseBall mBall;
+
+	angryBird bird;
+
 	sf::Texture ballSprite;
 };
