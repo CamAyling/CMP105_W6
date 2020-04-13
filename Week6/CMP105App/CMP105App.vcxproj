@@ -164,6 +164,7 @@
     <ClCompile Include="gravBall.cpp" />
     <ClCompile Include="Level.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="mouseBall.cpp" />
     <ClCompile Include="pathBall.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -177,6 +178,7 @@
     <ClInclude Include="Framework\Vector.h" />
     <ClInclude Include="gravBall.h" />
     <ClInclude Include="Level.h" />
+    <ClInclude Include="mouseBall.h" />
     <ClInclude Include="pathBall.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

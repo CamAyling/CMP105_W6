@@ -42,6 +42,9 @@
     <ClCompile Include="pathBall.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="mouseBall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="README.txt">
@@ -71,6 +74,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="pathBall.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mouseBall.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
