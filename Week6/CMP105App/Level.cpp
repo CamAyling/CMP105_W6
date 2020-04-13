@@ -6,13 +6,18 @@ Level::Level(sf::RenderWindow* hwnd, Input* in)
 	input = in;
 
 	// initialise game objects
-	gBall = gravBall(window);
+	gBall = gravBall(window, input);
+	pBall = pathBall(window);
 
 	ballSprite.loadFromFile("gfx/Beach_Ball.png");
+
 	gBall.setTexture(&ballSprite);
 	gBall.setSize(sf::Vector2f(50, 50));
 	gBall.setPosition(300, 50);
-	gBall.setInput(input);
+
+	pBall.setTexture(&ballSprite);
+	pBall.setSize(sf::Vector2f(50, 50));
+	pBall.setPosition(0, 0);
 }
 
 Level::~Level()
@@ -29,6 +34,7 @@ void Level::handleInput(float dt)
 void Level::update(float dt)
 {
 	gBall.update(dt);
+	pBall.update(dt);
 }
 
 // Render level
@@ -37,6 +43,7 @@ void Level::render()
 	beginDraw();
 
 	window->draw(gBall);
+	window->draw(pBall);
 
 	endDraw();
 }

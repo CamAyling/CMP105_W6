@@ -39,6 +39,9 @@
     <ClCompile Include="gravBall.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="pathBall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="README.txt">
@@ -65,6 +68,9 @@
       <Filter>Framework</Filter>
     </ClInclude>
     <ClInclude Include="gravBall.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pathBall.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

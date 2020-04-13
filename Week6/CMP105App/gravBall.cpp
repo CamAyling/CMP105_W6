@@ -1,7 +1,11 @@
 #include "gravBall.h"
 
-gravBall::gravBall(sf::RenderWindow* hwnd)
+gravBall::gravBall()
+{}
+
+gravBall::gravBall(sf::RenderWindow* hwnd, Input* in)
 {
+	setInput(in);
 	window = hwnd;
 	momentum = sf::Vector2f(0, 0);
 	clicking = false;

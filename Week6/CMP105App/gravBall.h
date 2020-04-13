@@ -5,8 +5,8 @@
 class gravBall : public GameObject
 {
 public:
-	gravBall() = default;
-	gravBall(sf::RenderWindow* hwnd);
+	gravBall();
+	gravBall(sf::RenderWindow* hwnd, Input* in);
 	~gravBall();
 
 	void handleInput();

@@ -5,6 +5,7 @@
 #include <string.h>
 #include <iostream>
 #include "gravBall.h"
+#include "pathBall.h"
 
 class Level {
 public:
@@ -26,5 +27,6 @@ private:
 
 	// More level variables
 	gravBall gBall;
+	pathBall pBall;
 	sf::Texture ballSprite;
 };
